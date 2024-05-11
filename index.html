@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso y uso de Canvas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        .page-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        canvas {
+            border: 2px solid red;
+            border-radius: 10%;
+        }
+        .buttons {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap ;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .buttons button {
+            margin: 10px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+          <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Canvas</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation. We hide it in small screens. -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+              <a class="mdl-navigation__link" href="uno.html">Modulo 1</a>
+              <a class="mdl-navigation__link" href="dos.html">Modulo 2</a>
+              <a class="mdl-navigation__link" href="tres.html">Modulo 3</a>
+              <a class="mdl-navigation__link" href="cuatro.html">Modulo 4</a>
+            </nav>
+          </div>
+        </header>
+        <div class="mdl-layout__drawer">
+          <span class="mdl-layout-title">Title</span>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="uno.html">Modulo 1</a>
+            <a class="mdl-navigation__link" href="dos.html">Modulo 2</a>
+            <Modulo class="mdl-navigation__link" href="tres.html">Modulo 3</a>
+            <a class="mdl-navigation__link" href="cuatro.html">Modulo 4</a>
+          </nav>
+        </div>
+        <main class="mdl-layout__content">
+          <div class="page-content">
+            <div class="buttons">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
+                mdl-button--accent" id="crearLinea">
+                    Crear linea
+                  </button> 
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
+                mdl-button--accent" id="crearArco">
+                    Crear Arco
+                  </button> 
+            </div>
+            <!--Atributos generales en una etiqueta canvas-->
+            <canvas id="canvas" width="450px" height="500px">
+                Tu navegador no soporta CANVAS
+            </canvas>
+        </div>
+        </main>
+      </div>
+      <script src="canvas.js"></script>
+</body>
+</html>
