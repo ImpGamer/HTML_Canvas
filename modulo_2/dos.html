@@ -16,6 +16,7 @@
         }
         canvas {
             border: 2px solid red;
+            border-radius: 10%;
         }
         .buttons {
             width: 100%;
@@ -41,45 +42,37 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation. We hide it in small screens. -->
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-              <a class="mdl-navigation__link" href="index.html">Modulo 1</a>
-              <a class="mdl-navigation__link" href="modulo_2/dos.html">Modulo 2</a>
-              <a class="mdl-navigation__link" href="modulo_3/tres.html">Modulo 3</a>
-              <a class="mdl-navigation__link" href="modulo_4/cuatro.html">Modulo 4</a>
+              <a class="mdl-navigation__link" href="../index.html">Modulo 1</a>
+              <a class="mdl-navigation__link" href="dos.html">Modulo 2</a>
+              <a class="mdl-navigation__link" href="../modulo_3/tres.html">Modulo 3</a>
+              <a class="mdl-navigation__link" href="../modulo_4/cuatro.html">Modulo 4</a>
             </nav>
           </div>
         </header>
         <div class="mdl-layout__drawer">
           <span class="mdl-layout-title">Title</span>
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="index.html">Modulo 1</a>
-            <a class="mdl-navigation__link" href="modulo_2/dos.html">Modulo 2</a>
-            <a class="mdl-navigation__link" href="modulo_3/tres.html">Modulo 3</a>
-            <a class="mdl-navigation__link" href="modulo_4/cuatro.html">Modulo 4</a>
+            <a class="mdl-navigation__link" href="../index.html">Modulo 1</a>
+            <a class="mdl-navigation__link" href="dos.html">Modulo 2</a>
+            <a class="mdl-navigation__link" href="../modulo_3/tres.html">Modulo 3</a>
+            <a class="mdl-navigation__link" href="../modulo_4/cuatro.html">Modulo 4</a>
           </nav>
         </div>
         <main class="mdl-layout__content">
           <div class="page-content">
             <div class="buttons">
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
-                mdl-button--accent" id="crearLinea">
-                    Crear linea
-                  </button> 
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
-                mdl-button--accent" id="crearArco">
-                    Crear Arco
-                  </button> 
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
-                mdl-button--accent" id="limpiar">
-                    Limpiar Lienzo
-                  </button>
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
-                mdl-button--accent" id="crearCurvasCuad">
-                    Crear curvas cuadraticas
-                  </button>  
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
-                mdl-button--accent" id="crearCurvasBezier">
-                    Crear curvas Bezier
-                  </button>
+                mdl-button--accent" id="crearGrillas">
+                    Crear grillas
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
+                mdl-button--accent" id="imagenCanvas">
+                    Agregar Imagen a Canvas
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect 
+                mdl-button--accent" id="addTexto">
+                    Agregar Texto a Canvas
+                </button>
             </div>
             <!--Atributos generales en una etiqueta canvas-->
             <canvas id="canvas" width="450px" height="500px">
@@ -88,6 +81,6 @@
         </div>
         </main>
       </div>
-      <script src="figuras_basicas.js"></script>
+      <script src="graficos.js"></script>
 </body>
 </html>
